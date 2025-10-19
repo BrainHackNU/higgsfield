@@ -121,7 +121,7 @@ const chosenImage =
       body: JSON.stringify(body),
     });
 
-    console.log("❌ Backend response:", response.status, await response.text());
+    // console.log("❌ Backend response:", response.status, await response.text());
     if (!response.ok) throw new Error("Request failed");
     const job = await response.json();
     const jobId = job?.jobs?.[0]?.id || job.id;
@@ -130,7 +130,12 @@ const chosenImage =
     let videoUrl = null;
     for (let i = 0; i < 20; i++) { // try for ~20×3s = 1 minute
       const res = await fetch(`https://higgsfield-api-production.up.railway.app/results/${jobId}`);
+
+
       const data = await res.json();
+
+          console.log("✅ Job response:", data);
+
 
       const resultUrl = data?.jobs?.[0]?.results?.raw?.url;
       if (resultUrl) {
@@ -157,7 +162,7 @@ const chosenImage =
 
     setMessages((prev) => [...prev, aiResponse]);
   } catch (err) {
-    console.error(err);
+    // console.error(err);
     setMessages((prev) => [
       ...prev,
       { sender: "ai", text: "Error contacting backend." },
