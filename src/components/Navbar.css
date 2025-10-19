@@ -41,6 +41,8 @@ path{
   display: flex;
   list-style: none;
   gap: 30px;
+  padding-left:0px;
+  margin-right: 50px;
 }
 .nav-links a {
   text-decoration: none;
