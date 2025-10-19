@@ -134,7 +134,7 @@ const chosenImage =
 
       const data = await res.json();
 
-          console.log("✅ Job response:", data);
+        //   console.log("✅ Job response:", data);
 
 
       const resultUrl = data?.jobs?.[0]?.results?.raw?.url;
