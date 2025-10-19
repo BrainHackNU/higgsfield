@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/higgsfield/static/css/main.7df1cc90.css",
+    "main.js": "/higgsfield/static/js/main.7b819f06.js",
+    "static/js/453.6e937322.chunk.js": "/higgsfield/static/js/453.6e937322.chunk.js",
+    "index.html": "/higgsfield/index.html",
+    "main.7df1cc90.css.map": "/higgsfield/static/css/main.7df1cc90.css.map",
+    "main.7b819f06.js.map": "/higgsfield/static/js/main.7b819f06.js.map",
+    "453.6e937322.chunk.js.map": "/higgsfield/static/js/453.6e937322.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7df1cc90.css",
+    "static/js/main.7b819f06.js"
+  ]
+}
